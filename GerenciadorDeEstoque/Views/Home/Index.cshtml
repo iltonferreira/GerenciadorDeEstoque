@@ -10,7 +10,7 @@
     </section>
 
     <section id="registro" class="registro">
-        <h2 class="reg-main-title">Registro de Produtos</h2>
+        <h2 class="section-titles">Registro de Produtos</h2>
 
         <form asp-action="RegistrarProduto" method="post">
             <input type="text" name="nomeProduto" id="reg-nome-produto" placeholder="Informe o nome:" required>
@@ -18,9 +18,39 @@
             <input type="number" name="precoProduto" id="reg-preco-produto" placeholder="Informe o preço:" required>
             <input type="text" name="grupoProduto" id="reg-grupo-produto" placeholder="Informe o grupo:">
 
-            <button type="submit" class="reg-button">Enviar Registro!</button>
+            <button type="submit" class="search-button">Enviar Registro!</button>
         </form>
 
+    </section>
+
+    <section class="consulta">
+        <h2 class="section-titles">Consulta de Produtos</h2>
+
+        <form action="">
+            <input id="cons-nome-produto" placeholder="Informe o nome do produto:" type="text">
+
+            <input id="cons-grupo-produto" placeholder="Informe o grupo do produto:" type="text">
+
+            <button class="search-button" type="submit">Consutar</button>
+        </form>
+    </section>
+
+    <section class="edicao">
+        <h2 class="section-titles">Edição de Produtos</h2>
+
+        
+    </section>
+
+    <section class="remocao">
+        <h2 class="section-titles">Remoção de Produtos</h2>
+
+        <form action="">
+            <input type="text" placeholder="Informe o nome do produto:" id="remo-nome-produto">
+
+            <input type="text" placeholder="Informe o grupo do produto:" id="remo-grupo-produto">
+
+            <button class="search-button" type="submit">Remover Item</button>
+        </form>
     </section>
     
 </div>
