@@ -12,12 +12,15 @@
     <section id="registro" class="registro">
         <h2 class="reg-main-title">Registro de Produtos</h2>
 
-        <input type="text" name="" id="reg-nome-produto" placeholder="Informe o nome:">
-        <input type="number" name="" id="reg-quant-produto" placeholder="Informe a quantidade:">
-        <input type="number" name="" id="reg-preco-produto" placeholder="Informe o preço:">
-        <input type="text" name="" id="reg-grupo-produto" placeholder="Informe o grupo:">
+        <form asp-action="RegistrarProduto" method="post">
+            <input type="text" name="nomeProduto" id="reg-nome-produto" placeholder="Informe o nome:" required>
+            <input type="number" name="quantProduto" id="reg-quant-produto" placeholder="Informe a quantidade:" required>
+            <input type="number" name="precoProduto" id="reg-preco-produto" placeholder="Informe o preço:" required>
+            <input type="text" name="grupoProduto" id="reg-grupo-produto" placeholder="Informe o grupo:">
 
-        <a class="reg-button" href="/">Enviar Registro!</a>
+            <button type="submit" class="reg-button">Enviar Registro!</button>
+        </form>
+
     </section>
     
 </div>
